@@ -46,7 +46,7 @@ class Implementation {
     }
 
     passwordValidator(password) {
-        let PASSWORD_PATTERN = new RegExp("[a-zA-Z0-9](?=.*[A-Z]).{8,40}");
+        let PASSWORD_PATTERN = new RegExp("(?=.*[0-9])(?=.*[A-Z]).{8,40}");
 
         if (PASSWORD_PATTERN.test(password)) {
             console.log("valid Password");
