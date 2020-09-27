@@ -44,5 +44,16 @@ class Implementation {
             console.log("Invalid Phone Number");
         }
     }
+
+    passwordValidator(password) {
+        let PASSWORD_PATTERN = new RegExp("[a-zA-Z0-9]{8,40}");
+
+        if (PASSWORD_PATTERN.test(password)) {
+            console.log("valid Password");
+        }
+        else {
+            console.log("Invalid Password");
+        }
+    }
 }
 module.exports = new Implementation();

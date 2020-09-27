@@ -34,6 +34,11 @@ class Main {
                         print.phoneNumberValidator(phoneNumber);
                     })
                     break;
+                case "5":
+                    input.question("Enter Password: \n", function (password) {
+                        print.passwordValidator(password);
+                    })
+                    break;
                 default:
                     console.log("Enter Valid option");
                     break;
