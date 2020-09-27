@@ -33,5 +33,16 @@ class Implementation {
             console.log("Invalid Email");
         }
     }
+
+    phoneNumberValidator(phoneNumber) {
+        let PHONE_NUMBER_PATTERN = new RegExp("^([0-9]{2}[ ]+)?[0-9]{10}$");
+
+        if (PHONE_NUMBER_PATTERN.test(phoneNumber)) {
+            console.log("valid Phone Number");
+        }
+        else {
+            console.log("Invalid Phone Number");
+        }
+    }
 }
 module.exports = new Implementation();

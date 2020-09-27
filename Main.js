@@ -29,6 +29,11 @@ class Main {
                         print.emailValidator(email);
                     })
                     break;
+                case "4":
+                    input.question("Enter Phone Number: \n", function (phoneNumber) {
+                        print.phoneNumberValidator(phoneNumber);
+                    })
+                    break;
                 default:
                     console.log("Enter Valid option");
                     break;
