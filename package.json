@@ -2,7 +2,7 @@
   "name": "userregistration",
   "version": "1.0.0",
   "description": "",
-  "main": "Implementation.js",
+  "main": "Main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
