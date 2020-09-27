@@ -1,4 +1,3 @@
-
 class Implementation {
 
     firstNameValidator(name) {
@@ -46,7 +45,7 @@ class Implementation {
     }
 
     passwordValidator(password) {
-        let PASSWORD_PATTERN = new RegExp("(?=.*[0-9])(?=.*[A-Z]).{8,40}");
+        let PASSWORD_PATTERN = new RegExp("^([A-Z]{1,})*([(@#$*)-])*[a-zA-Z0-9]{6,}$");
 
         if (PASSWORD_PATTERN.test(password)) {
             console.log("valid Password");
