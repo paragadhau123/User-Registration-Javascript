@@ -1,10 +1,10 @@
 const print = require('./Implementation');
-class main {
+class Main {
     main() {
         console.log("---Welcome to User Validation---\n");
         console.log("\t--MENU--");
         console.log("1: Validate First Name          ");
-        console.log("2: Validate Second Name         ");
+        console.log("2: Validate Last Name         ");
         console.log("3: Validate Email Address       ");
         console.log("4: Validate Phone Number        ");
         console.log("5: Validate Password            ");
@@ -19,6 +19,11 @@ class main {
                         print.firstNameValidator(firstName);
                     })
                     break;
+                case "2":
+                    input.question("Enter Last Name: \n", function (lastName) {
+                        print.firstNameValidator(lastName);
+                    })
+                    break;
                 default:
                     console.log("Enter Valid option");
                     break;
@@ -26,5 +31,5 @@ class main {
         })
     }
 }
-const object = new main();
+const object = new Main();
 object.main();

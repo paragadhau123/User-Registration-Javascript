@@ -11,5 +11,16 @@ class Implementation {
             console.log("Invalid First Name");
         }
     }
+
+    lastNameValidator(name) {
+        let LAST_NAME_PATTERN = new RegExp("^[A-Z]{1}[a-z]{2,}$");
+
+        if (LAST_NAME_PATTERN.test(name)) {
+            console.log("valid Last Name");
+        }
+        else {
+            console.log("Invalid Last Name");
+        }
+    }
 }
 module.exports = new Implementation();
