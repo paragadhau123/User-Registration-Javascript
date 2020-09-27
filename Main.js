@@ -21,7 +21,12 @@ class Main {
                     break;
                 case "2":
                     input.question("Enter Last Name: \n", function (lastName) {
-                        print.firstNameValidator(lastName);
+                        print.lastNameValidator(lastName);
+                    })
+                    break;
+                case "3":
+                    input.question("Enter Email Address: \n", function (email) {
+                        print.emailValidator(email);
                     })
                     break;
                 default:

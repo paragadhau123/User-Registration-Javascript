@@ -22,5 +22,16 @@ class Implementation {
             console.log("Invalid Last Name");
         }
     }
+
+    emailValidator(email) {
+        let EMAIL_PATTERN = new RegExp("^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)?@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})?$");
+
+        if (EMAIL_PATTERN.test(email)) {
+            console.log("valid Email");
+        }
+        else {
+            console.log("Invalid Email");
+        }
+    }
 }
 module.exports = new Implementation();
